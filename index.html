@@ -1,0 +1,159 @@
+<html>
+<body>
+
+<script>
+//By reading the ECMAScript specification, you learn how to create a scripting language. By reading the JavaScript documentation, you learn how to use a scripting language.
+
+let name="Uphaar";
+
+console.log(name);
+name=2.1
+console.log(name);
+let s='100';
+console.log(typeof(s));
+const x=100;
+var org="DSC";
+console.log(org);
+
+if(x>50)
+{
+console.log("Greater than 50")
+}
+else{
+  console.log("Less then");
+}
+
+var sal=5000;
+if(sal>20000)
+{
+  sal=sal-sal*0.2;
+}
+else if(sal<20000&&sal>10000)
+{
+  sal=sal-sal*0.15;
+}
+else {
+  sal=sal-sal*0.1;
+}
+console.log(sal);
+
+var expr="Oranges";
+switch (expr) {
+  case 'Oranges':
+    console.log('Oranges are $0.59 a pound.');
+    break;
+  case 'Apples':
+    console.log('Apples are $0.32 a pound.');
+    break;
+  case 'Bananas':
+    console.log('Bananas are $0.48 a pound.');
+    break;
+  case 'Cherries':
+    console.log('Cherries are $3.00 a pound.');
+    break;
+  case 'Mangoes':
+  case 'Papayas':
+    console.log('Mangoes and papayas are $2.79 a pound.');
+    break;
+  default:
+    console.log('Sorry, we are out of ' + expr + '.');
+}
+let temp=10;
+(temp>50) ? console.log("YES") :console.log ("NO");
+
+let glob="Some value";
+if(true)
+{
+  //let local="More value";
+  //var local2="batman";
+//glob="changed";
+  console.log(glob);
+  //console.log(local2);
+}
+console.log(glob);
+//console.log(local2);
+function abc(x)
+{
+  x=10;
+console.log(x);
+}
+abc(5);
+console.log(x);
+
+for(var q=0;q<5;q++)
+{
+console.log(q);
+}
+var q=0;
+while(q!=5)
+{
+console.log(q);
+q++;
+}
+
+/*
+//let king="Dave";
+if(true)
+{
+//let king="john";
+if(true)
+{
+//let king ="David";
+console.log(king);
+}
+}
+
+if(true)
+{
+  console.log(king);
+}
+*/
+var ch=1;
+ch++;
+console.log(ch);
+
+//operators
+console.log("1" == 1);
+console.log(1 == 1);
+console.log("1" === 1);
+console.log('1'+1);
+console.log('1'+1+1);
+console.log(1+1+'1');
+console.log('1'+(1+1)+'1');
+
+
+function add(x,y)
+{
+  return x+y;
+}
+console.log(add(2,3));
+
+function map(f, a) {
+  var result = []; 
+  var i;
+  for (i = 0; i != a.length; i++)
+    result[i] = f(a[i]);
+  return result;
+}
+var f = function(x) {
+   return x * x * x;
+}
+var numbers = [0, 1, 2, 5, 10];
+var cube = map(f,numbers);
+console.log(cube);
+
+
+var pet = function(name) {
+  var getName = function() {
+    return name;
+  }
+  return getName;
+}
+myPet = pet('Vivie');
+
+myPet();
+</script>
+</body>
+
+
+</html>
